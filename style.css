@@ -57,6 +57,17 @@ body {
     align-items: center;
 }
 
+.menu-list span {
+    padding: 30px 0;
+}
+
+.menu-list span:hover {
+
+    padding-bottom: 27.5px;
+    border-style: none none solid;
+    border-color: var(--orange);
+}
+
 .menu-list a {
     text-decoration: none;
     color: var(--dark-grayish-blue);
