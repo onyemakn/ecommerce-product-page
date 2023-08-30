@@ -55,8 +55,11 @@ body {
     display: flex;
     gap: 30px;
     align-items: center;
-    color: var(--dark-grayish-blue);
+}
 
+.menu-list a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
 }
 
 .container1 hr {
@@ -105,13 +108,21 @@ body {
     width: 80px;
 }
 
+.picture-stack img:hover {
+    border-style: solid;
+    border-color: var(--orange);
+    border-width: 3px;
+    cursor: pointer;
+    opacity: .3;
+}
+
 .product-description {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
 }
 
-.product-description h5, h1, p {
+.product-description h5, h1, p, .pieces, .price {
     font-family: var(--chosen-font);
 }
 
@@ -126,21 +137,43 @@ body {
 }
 
 .product-description p {
-    padding-right: 80px;
-    padding-bottom: 20px;
+    padding-right: 105px;
     color: var(--dark-grayish-blue);
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
 }
 
 .price {
-    padding: 20px 0;
+    padding: 24px 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.price-and-discount {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.price-and-discount .discount {
+    font-size: 9px;
+    background-color: var(--pale-orange);
+    color: var(--orange);
+    padding: 2px 4px;
+}
+
+.normal-price {
+    font-size: 12px;
+    color: var(--grayish-blue);
+    text-decoration: line-through;
 }
 
 .cart-select {
     display: flex;
     flex-direction: row;
-    gap: 30px
+    gap: 30px;
+    height: 40px;
 }
 
 .add-to-cart {
@@ -149,15 +182,16 @@ body {
     flex-direction: row;
     background-color: var(--orange);
     border-radius: 5px;
-    gap: 10px;
+    gap: 60px;
     text-align: center;
+    height: inherit;
 }
 
 .add-to-cart a {
+
     background-color: var(--orange);
     align-items: center;
-    color: var(--white);
-    padding: 15px;
+    color: white;
     border-radius: 5px;
     width: 200px;
     text-decoration: none;
@@ -165,21 +199,36 @@ body {
     font-family: var(--chosen-font) ;
 }
 
+.add-to-cart span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.favicon {
+
+    color: white;
+    padding-right: 17px;
+
+}
+
 .add-cart-icon {
-    width: 15px;
-    color: var(--white);
+    width: 12px;
+    margin-right: 10px;
 }
 
 .piece-select {
     background-color: var(--light-grayish-blue);
-    width: 152px;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
     align-items: center;
-    padding: 0 0px;
+    padding: 0 20px;
+}
+
+.minus {
+    margin-bottom: 3px;
 }
 
 .picture-gallery {
