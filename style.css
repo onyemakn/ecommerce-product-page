@@ -115,16 +115,26 @@ body {
 }
 
 .picture-stack img {
+    padding: 0px;
+    margin: 0px;
     border-radius: 8px;
     width: 80px;
 }
 
 .picture-stack img:hover {
+    /* border-style: solid;
+    border-color: var(--orange);
+    border-width: 3px; */
+    cursor: pointer;
+    opacity: .3;
+}
+
+.photo-border {
     border-style: solid;
     border-color: var(--orange);
     border-width: 3px;
-    cursor: pointer;
-    opacity: .3;
+    border-radius: 11px;
+    height: 85.5px;
 }
 
 .product-description {
@@ -245,6 +255,5 @@ body {
 .picture-gallery {
     margin-right: 110px;
 }
-
 
 
