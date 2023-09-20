@@ -129,6 +129,10 @@ body {
     opacity: .3;
 }
 
+.picture-stack img:after {
+    opacity: .3;
+}
+
 .photo-border {
     border-style: solid;
     border-color: var(--orange);
