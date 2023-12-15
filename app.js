@@ -21,5 +21,10 @@ function getClass() {
   this.style.opacity = "0.3"
 }
 
+productImage.addEventListener("click", zoomImage)
+
+function zoomImage(){
+  console.log('Big Image Is Clicked')
+}
 
 
